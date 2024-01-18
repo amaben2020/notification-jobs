@@ -23,10 +23,10 @@ client.defineJob({
           `${process.env.NEXT_PUBLIC_BASE_URL}/api/jobs/send-notification`,
           {
             method: "POST",
-            body: JSON.stringify({ viewId }),
+            body: JSON.stringify({ viewId: "viewId" }),
             headers: {
               "Content-Type": "application/json",
-              Authorization: `Bearer ${process.env.INTERNAL_API_KEY}`, // <- add the authenication header with a local env variable
+              Authorization: `Bearer ${process.env.INTERNAL_API_KEY}`, // <- add the Authenication header with a local env variable
             },
           },
         );
