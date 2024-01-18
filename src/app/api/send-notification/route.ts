@@ -10,8 +10,8 @@ export async function POST(req: NextRequest, res: NextResponse) {
     const { email, name } = await req.json();
     // send email to document owner that document
     await sendEmail({
-      email: email as string,
-      name: name as string,
+      email: email,
+      name: name,
     });
 
     return NextResponse.json(
