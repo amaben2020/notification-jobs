@@ -1,10 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendEmail } from "../../../../lib/email/resend-notification";
 
-export const config = {
-  maxDuration: 60,
-};
-
 export async function POST(req: NextRequest, res: NextResponse) {
   try {
     const { email, name } = await req.json();
