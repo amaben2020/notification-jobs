@@ -11,7 +11,7 @@ import {
   Text,
 } from "@react-email/components";
 
-export default function ViewedDocument({
+export function NotificationEmail({
   name,
 }: {
   name: string | null | undefined;
