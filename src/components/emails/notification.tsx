@@ -11,15 +11,11 @@ import {
   Text,
 } from "@react-email/components";
 
-export function NotificationEmail({
-  name,
-}: {
-  name: string | null | undefined;
-}) {
+export function NotificationEmail({ name }: { name: string }) {
   return (
     <Html>
       <Head />
-      <Preview>See who visited your document</Preview>
+      <Preview>See who visited your document {name}</Preview>
       <Tailwind>
         <Body className="bg-white my-auto mx-auto font-sans">
           <Container className="my-10 mx-auto p-5 w-[465px]">
