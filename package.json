@@ -9,19 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-email/components": "0.0.13",
+    "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "react-email": "^1.10.1",
+    "resend": "^2.1.0",
+    "@trigger.dev/sdk": "^2.3.15",
+    "@trigger.dev/nextjs": "^2.3.15",
+    "@trigger.dev/react": "^2.3.15"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "typescript": "^5"
+  },
+  "trigger.dev": {
+    "endpointId": "cartstand-lWtw"
   }
 }
